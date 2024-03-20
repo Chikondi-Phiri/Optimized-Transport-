@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en-us">
+	<head>
+		<title>TISALA BUS SERVICES </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<script
+			  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+			  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+			  crossorigin="anonymous"></script>
+		<script>
+			var numberBanners = 0;
+			function changeBanner() {
+				var currentBanner = $("#banner .banner:visible").index();
+				$("#banner .banner").eq(currentBanner).fadeOut(2500);
+				var nextBanner = currentBanner < (numberBanners-1) ? currentBanner + 1 : 0;
+				$("#banner .banner").eq(nextBanner).fadeIn(2500);
+			}
+			window.onload = function() {
+				numberBanners = $("#banner").children().length;
+				setInterval(changeBanner, 3500)
+			};
+
+
+		</script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<nav id="nav">
+						<a href="index.html" class="active">Home</a>
+						<a href="routes.html">Routes</a>
+						<a href="parking.html">Maps</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Banner -->
+			<section id="banner">
+				<img class="banner banner-1 show" src="/images/banners/banner1.jpg.webp" />
+				<img class="banner banner-2" src="/images/banners/banner2.jpg" />
+				<img class="banner banner-3" src="/images/banners/banner3.jpg" />
+				<img class="banner banner-3" src="/images/banners/banner4.jpg.avif" />
+			</section>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+					<h1>Sexennial Civilized Century - under construction</h1>
+					<h2>Sunday, August 4<span style="text-transform: lowercase;">th</span>, 2024</h2>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two">
+				<div class="inner">
+					<article>
+						<div class="content">
+							<header>
+								<h2>The Ride</h2>
+							</header>
+							<p>This platform provides drivers and customers a sustainable time managing .</p>
+							<ul>
+								<li>No ugly start times. Ride out at anytime you want </li>
+								<li>No late arrivals, reduced accoidents, and more safety. Will not hear things like (Ba driver we late for work can move fast)</li>
+								<li>We provide you with the platform that saves u fuel and cutomer management.</li>
+								<li>We help our government with easy tracking of criminals and reduce fuel expenditures. It's local!</li>
+								<li>.</li>
+							</ul>
+							<p>Designed for safety, or low car traffic.</p>
+							<a id="registerButton" href="#" class="button special">Register to Ride</a>&nbsp;&nbsp;<span><span style="color:red">Travel in peace and reach your destination in time</span></span>
+						</div>
+					</article>
+					<article>
+						<div class="content">
+							<header>
+								<h2>Event Jersey Returns???</h2>
+							</header>
+							<div class="image fit">
+								<img src="images/Jersey2020-Front-n-Back.png" alt="" />
+							</div>
+							<p>Order details coming. Jerseys ordered by TBD will be available pre-ride at the packet pickup/check-in site.</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<section id="footer" class="houndstooth">
+				<div class="inner">
+					<p class="right">The "Civilized public transportation" is here to change the public transportation <a href="https://www.meetup.com/Redwood-Shores-Cycling-Meetup/">Redwood Shores Cycling Meetup</a>.</p>
+				</div>
+			</section>
+
+			<section id="registerModal">
+				<div class="inner">
+					<div id="eventbrite-widget-container-632192002297"></div>
+                                        // change the / at the beginning of the next line for the button to become active
+					// change all the 632192002297 to the new number
+					</script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+					<script type="text/javascript">
+						var exampleCallback = function() {
+							console.log('Order complete!');
+							$('#registerButton').hide();
+						};
+
+						window.EBWidgets.createWidget({
+							// Required
+							widgetType: 'checkout',
+							eventId: '632192002297',
+							iframeContainerId: 'eventbrite-widget-container-632192002297',
+
+							// Optional
+							iframeContainerHeight: 800,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+							onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+						});
+
+						$('#registerButton').click(function(e) {
+							e.preventDefault();
+							$('#registerModal').show();
+						});
+
+						$('#registerModal').click(function(e) {
+							console.log("modal clicked");
+							$('#registerModal').hide();
+						});
+					</script>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

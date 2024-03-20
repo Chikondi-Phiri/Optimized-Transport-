@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en-us">
+	<head>
+		<title>Routes | Civilized Century</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<script
+			  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+			  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+			  crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="routes.html" class="active">Routes</a>
+						<a href="parking.html">Parking</a>
+						
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			<section id="two">
+				<div class="inner">
+					<article>
+						<div class="content">
+							<header>
+								<h2>Route Navigation</h2>
+							</header>
+							<p>Multiple ways to stay on course!</p>
+							<ul>
+								<li>Route Markers <img src="images/route-markers.png" /></li>
+								<li>Route Cue Sheet (provided at Packet Pickup)</li>
+								  <ul>
+								    <li><a href="https://github.com/RedwoodShoresCyclingMeetup/civilized-century/raw/master/assets/files/Quinquennial_Civilized_Century_35-2023.pdf" type="application/pdf" target="_blank">35 mile Route</a></li>
+								    <li><a href="https://github.com/RedwoodShoresCyclingMeetup/civilized-century/raw/master/assets/files/Quinquennial_Civilized_Century_60-2023.pdf" type="application/pdf" target="_blank">60 mile Route</a></li>
+								    <li><a href="https://github.com/RedwoodShoresCyclingMeetup/civilized-century/raw/master/assets/files/Quinquennial_Civilized_Century_75-2023.pdf" type="application/pdf" target="_blank">75 mile Route</a></li>
+								    <li><a href="https://github.com/RedwoodShoresCyclingMeetup/civilized-century/raw/master/assets/files/Quinquennial_Civilized_Century_100-2023.pdf" type="application/pdf" target="_blank">100 mile Route</a></li>
+								  </ul>
+								<li>RideWithGPS (Exports free / App not)</li>
+								<li><a href="https://github.com/RedwoodShoresCyclingMeetup/civilized-century/raw/master/assets/files/What is Glympse.pdf" type="application/pdf" target="_blank">Glympse (Rider Tracking)</a></li>
+							</ul>
+						</div>
+					</article>
+					<article>
+						<div class="content">
+							<header>
+								<h2>Sunday Schedule</h2>
+							</header>
+							<p><b>24 HOURS:</b> Packet pickup opens <span style="color:red">at the arch</span> for photos and mass group start.</p>
+							<p><b>YOU CHOOSE TIME FOR EXPRESS:</b> The Sexennial Civilized Century closes. Post your pics!</p>
+							<a id="registerButton" href="#" class="button special">Register to Ride</a>&nbsp;&nbsp;<span><span style="color:red">starting June 1st</span></span>
+						</div>
+					</article>
+				</div>
+			</section>
+		<!-- Footer -->
+			<section id="footer" class="houndstooth">
+				<div class="inner">
+					<p class="right">The "Civilized public Transportation" is here to change the public transportation <a href="https://www.meetup.com/Redwood-Shores-Cycling-Meetup/">Redwood Shores Cycling Meetup</a>.</p>
+				</div>
+			</section>
+
+			<section id="registerModal">
+				<div class="inner">
+					<div id="eventbrite-widget-container-632192002297"></div>
+                                        // change the / at the beginning of the next line for the button to become active
+					// change all the 632192002297 to the new number
+					</script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+					<script type="text/javascript">
+						var exampleCallback = function() {
+							console.log('Order complete!');
+							$('#registerButton').hide();
+						};
+
+						window.EBWidgets.createWidget({
+							// Required
+							widgetType: 'checkout',
+							eventId: '632192002297',
+							iframeContainerId: 'eventbrite-widget-container-632192002297',
+
+							// Optional
+							iframeContainerHeight: 800,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+							onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+						});
+
+						$('#registerButton').click(function(e) {
+							e.preventDefault();
+							$('#registerModal').show();
+						});
+
+						$('#registerModal').click(function(e) {
+							console.log("modal clicked");
+							$('#registerModal').hide();
+						});
+					</script>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
